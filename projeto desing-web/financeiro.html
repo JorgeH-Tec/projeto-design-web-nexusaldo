@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Financeiro - NexuSaldo</title>
+  <link rel="icon" type="image/png" href="img/favicon-ns.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/estilo-financeiro.css" media="all">
+</head>
+
+<body>
+  <header>
+    <div class="header-nav">
+      <nav>
+        <ul class="ul-nav">
+
+          <div class="div-img-nav">
+            <a href="index.html">
+              <img class="img-nav" src="img/logo_ns.png" alt="logo_NexuSaldo">
+            </a>
+          </div>
+
+          <li class="li-nav"><a class="link-nav" href="index.html"> Home </a></li>
+          <li class="li-nav"><a class="link-nav active" href="financeiro.html"> Financeiro </a></li>
+          <li class="li-nav"><a class="link-nav" href="contatos.html"> Contatos </a></li>
+          <li class="li-nav"><a class="link-nav" href="sobre.html"> Sobre </a></li>
+
+          <li class="li-btn-nav">
+            <a class="btn-login-nav" href="login.html"> Entrar </a>
+            <a class="btn-register-nav" href="cadastro.html"> Cadastro </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+
+      <h1>Meu Painel Financeiro</h1>
+      <p class="demonstração">(Versão demonstrativa)</p>
+      <section class="grid">
+        <div class="card">
+          <div class="muted">Saldo Atual</div>
+          <div class="saldo">R$ 2.500,00</div>
+        </div>
+
+        <div class="card">
+          <div class="muted">Receitas (mês)</div>
+          <div class="receita">R$ 4.000,00</div>
+        </div>
+
+        <div class="card">
+          <div class="muted">Despesas (mês)</div>
+          <div class="despesas">R$ 1.500,00</div>
+        </div>
+      </section>
+
+      <section style="margin-top:20px">
+        <div class="card">
+          <div class="muted">Gráfico de Gastos</div>
+          <div class="pizza"></div>
+
+          <div class="legenda">
+            <div>
+              <div class="cor verde"></div> Receita
+            </div>
+            <div>
+              <div class="cor vermelho"></div> Despesas
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+:root {
+	--bg: #0F172A;
+	--fundo-nav: rgba(30, 41, 59, 0.9);
+	--card: #1E293B;
+	--text: #E2E8F0;
+	--text-btn: #00D1B2;
+	--accent: #28a745;
+	--accent2: #38BDF8;
+	--border-main: rgba(0, 209, 178, 0.2);
+}
+
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+.header-nav {
+	width: 100%;
+	background: var(--fundo-nav);
+	backdrop-filter: blur(8px);
+	border-bottom: 2px solid rgba(0, 209, 178, 0.3);
+	box-shadow: 0 4px 20px rgba(0, 209, 178, 0.1);
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.ul-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 10px 40px;
+}
+
+.div-img-nav {
+	display: flex;
+	align-items: center;
+}
+
+.img-nav {
+	width: 140px;
+	height: auto;
+	transition: transform 0.3s ease;
+}
+
+.img-nav:hover {
+	transform: scale(1.1);
+
+}
+
+.li-nav {
+	margin: 0 2px;
+}
+
+.link-nav {
+	color: var(--text);
+	text-decoration: none;
+	font-size: 1rem;
+	position: relative;
+	transition: 0.3s ease;
+}
+
+.link-nav::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 0%;
+	height: 2px;
+	background: linear-gradient(90deg, #00D1B2, #38BDF8);
+	transition: width 0.3s ease;
+	border-radius: 40px;
+}
+
+.link-nav:hover {
+	color: #00D1B2;
+}
+
+.link-nav:hover::after,
+.link-nav.active::after {
+	width: 100%;
+}
+
+.li-btn-nav {
+	display: flex;
+	gap: 15px;
+}
+
+.btn-login-nav,
+.btn-register-nav {
+	padding: 8px 18px;
+	border-radius: 25px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	text-align: center;
+}
+
+.btn-login-nav {
+	color: var(--text-btn);
+	border: 2px solid var(--text-btn);
+}
+
+.btn-login-nav:hover {
+	background: var(--text-btn);
+	color: var(--text);
+	box-shadow: 0 0 15px var(--text-btn);
+}
+
+.btn-register-nav {
+	background: linear-gradient(90deg, #38BDF8, #00D1B2);
+	color: var(--text);
+	border: none;
+	box-shadow: 0 0 10px rgba(0, 209, 178, 0.3);
+}
+
+.btn-register-nav:hover {
+	box-shadow: 0 0 20px #00D1B2;
+}
+
+@media (max-width: 900px) {
+	.ul-nav {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+	}
+
+	.li-nav {
+		margin: 5px 10px;
+	}
+
+	.li-btn-nav {
+		margin-top: 10px;
+	}
+
+}
+
+main {
+	color: var(--text);
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.main-index {
+    margin-top: 100px; 
+    padding: 40px 20px 50px 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1 {
+	background: -webkit-linear-gradient(#00D1B2, #38BDF8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.div-main-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    
+    background-color: var(--card);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--border-main);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.div-main-1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+.btns-principais {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn-principal1,
+.btn-principal2 {
+	padding: 12px 25px;
+	border-radius: 28px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	text-align: center;
+	font-size: 1.05rem;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-principal1 {
+	color: var(--text);
+	border: 3px solid var(--text-btn);
+	background: linear-gradient(#00D1B2, #38BDF8);
+}
+
+.btn-principal1:hover {
+	background-color: var(--text);
+	color: var(--bg);
+	box-shadow: 0 0 10px var(--text-btn);
+	transform: translateY(-1px);
+}
+
+.btn-principal2 {
+	color: var(--text);
+	border: 3px solid var(--text-btn);
+	background: linear-gradient(#00D1B2, #38BDF8);
+}
+
+.btn-principal2:hover {
+	background-color: var(--text);
+	color: var(--bg);
+	box-shadow: 0 0 10px var(--text-btn);
+	transform: translateY(-1px);
+}
+
+.reset-emoji {
+	background: -webkit-linear-gradient(45deg, var(--text), var(--text));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--text);
+}

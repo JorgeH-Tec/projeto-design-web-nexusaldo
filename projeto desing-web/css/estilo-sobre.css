@@ -1,0 +1,113 @@
+.main-index {
+    margin-top: 20px; 
+    padding: 40px 20px 50px 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-container {
+    padding: 0;
+}
+
+.titulo-sobre {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitulo-sobre {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.subtitulo-secao {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0;
+    background: -webkit-linear-gradient(45deg, var(--text-btn), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 209, 178, 0.2);
+    padding-bottom: 5px;
+}
+
+.duas-boxs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+
+.secao-sobre {
+    background-color: var(--card); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.secao-sobre p {
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.chamada {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    padding-top: 40px;
+    box-shadow: none;
+    border-left: none;
+}
+
+.chamada .subtitulo-secao {
+    text-align: center;
+}
+
+.chamada p {
+    margin-bottom: 25px;
+}
+
+.chamada .btns-principais {
+    justify-content: center;
+}
+
+@media (max-width: 800px) { 
+    .duas-boxs {
+        flex-direction: column; 
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-sobre {
+        font-size: 2rem;
+    }
+    .subtitulo-secao {
+        font-size: 1.5rem;
+    }
+    .lista-valores {
+        grid-template-columns: 1fr;
+    }
+    .chamada .btns-principais {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn-principal1,
+    .btn-principal2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

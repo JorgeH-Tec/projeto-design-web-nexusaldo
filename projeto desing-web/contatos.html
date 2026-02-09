@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contatos - NexuSaldo</title>
+	<link rel="icon" type="image/png" href="img/favicon-ns.png">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/estilo-contatos.css" media="all">
+</head>
+
+<body>
+
+	<header class="header-nav">
+		<nav>
+			<ul class="ul-nav">
+
+				<div class="div-img-nav">
+					<a href="index.html">
+						<img class="img-nav" src="img/logo_ns.png" alt="logo_NexuSaldo">
+					</a>
+				</div>
+
+				<li class="li-nav"><a class="link-nav" href="index.html"> Home </a></li>
+				<li class="li-nav"><a class="link-nav" href="financeiro.html"> Financeiro </a></li>
+				<li class="li-nav"><a class="link-nav active" href="contatos.html"> Contatos </a></li>
+				<li class="li-nav"><a class="link-nav" href="sobre.html"> Sobre </a></li>
+
+				<li class="li-btn-nav">
+					<a class="btn-login-nav" href="login.html"> Entrar </a>
+					<a class="btn-register-nav" href="cadastro.html"> Cadastro </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main class="main-index">
+		<div class="contato-container">
+
+			<h1 class="titulo-contato">Fale Conosco <span class="reset-emoji">👋</span></h1>
+			<p class="subtitulo-contato">Tem dúvidas, sugestões ou precisa de suporte? Entre em contato, estamos aqui
+				para ajudar.</p>
+
+			<div class="contato-grid">
+
+				<div class="contato-form">
+					<h2 class="subtitulo-secao">Envie uma Mensagem Rápida</h2>
+					<form action="sucesso.html" method=""><!-- POST -->
+
+						<div class="form-grupo">
+							<label for="nome">Seu Nome:</label>
+							<input type="text" id="nome" name="nome" required>
+						</div>
+
+						<div class="form-grupo">
+							<label for="email">Seu E-mail:</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+
+						<div class="form-grupo">
+							<label for="assunto">Assunto:</label>
+							<input type="text" id="assunto" name="assunto" required>
+						</div>
+
+						<div class="form-grupo">
+							<label for="mensagem">Mensagem:</label>
+							<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+						</div>
+
+						<button type="submit" class="btn-principal1 btn-form-submit">Enviar Mensagem</button>
+					</form>
+				</div>
+
+				<div class="contato-info">
+					<h2 class="subtitulo-secao">Canais de Atendimento</h2>
+
+					<div class="info-item">
+						<p class="info-titulo">📧 E-mail de Suporte</p>
+						<a href="mailto:suporte@nexusldo.com.br" class="info-link">suporte@nexusaldo.com.br</a>
+					</div>
+
+					<div class="info-item">
+						<p class="info-titulo">📞 Telefone (Comercial)</p>
+						<a href="tel:+5511987654321" class="info-link">+55 (61) 98888-7777</a>
+						<span class="info-subtext">Segunda a Sexta, das 9h às 18h</span>
+					</div>
+
+	</main>
+
+
+</body>
+
+</html>

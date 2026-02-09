@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - NexuSaldo</title>
+    <link rel="icon" type="image/png" href="img/favicon-ns.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo-acessos.css" media="all">
+</head>
+
+<body>
+
+    <div class="acesso-container">
+        
+        <a href="index.html">
+            <img class="logo-acesso" src="img/logo_ns.png" alt="logo_NexuSaldo">
+        </a>
+        
+        <h1 class="titulo-acesso">Crie sua Conta</h1>
+        <p class="subtitulo-acesso">Organize suas finanças hoje mesmo, é rápido e fácil.</p>
+        
+        <form action="index.html" method="POST">
+            <div class="form-grupo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-grupo">
+                <label for="senha">Crie uma Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="confirmar-senha">Confirme a Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+            </div>
+            
+            <button type="submit" class="btn-acesso btn-submit">Cadastrar e Começar</button>
+        </form>
+        
+        <p class="acesso-footer">
+            Já tem uma conta? 
+            <a href="login.html" class="link-ajuda">Faça login aqui</a>
+        </p>
+    </div>
+
+</body>
+</html>
